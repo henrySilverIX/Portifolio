@@ -1,4 +1,4 @@
-/* variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
+/* Variables declared here - these are the colors for our pages, as well as the font stacks and sizes. */
 :root {
     --black: #171321;
     --dkblue: #0d314b;
@@ -11,16 +11,16 @@
     --mono: "Oxygen mono", monospace;
     --sans: Oxygen, sans-serif;
 }
-/* border box model: https://css-tricks.com/box-sizing/ */
+
+/* Border box model */
 html {
     box-sizing: border-box;
 }
-*,
-*::before,
-*::after {
+* , *::before, *::after {
     box-sizing: inherit;
 }
-/* generic styles for the page */
+
+/* Generic styles for the page */
 body {
     padding: 0;
     margin: 0;
@@ -29,20 +29,22 @@ body {
     color: var(--white);
     font-size: var(--font-size);
 }
-h1,
-h2,
-h3 {
+
+h1, h2, h3 {
     margin: 0;
+    padding: 0;
 }
+
 a {
     color: var(--magenta);
+    text-decoration: none;
 }
 
 a:hover {
     color: var(--hotmag);
-    text-decoration: none;
 }
-/* intro styles */
+
+/* Intro styles */
 #intro {
     padding-bottom: 10rem;
 }
@@ -52,46 +54,58 @@ a:hover {
     line-height: 1.5;
 }
 
-#intro .name {
+#intro .intro__name {
     font-family: var(--mono);
-    font-size: 1rem;
 }
 
-.name span {
+#intro .intro__name span {
     font-family: var(--sans);
     font-size: 4rem;
     color: var(--aqua);
     display: block;
-    font-weight: 300;
 }
 
-#intro h2 {
-    font-size: 4rem;
+#intro h1 {
+    font-size: 2rem;
 }
 
-/* contact section */
-
+/* Contact section */
 #contact {
-    width: 400px;
-    text-align: center;
+    padding: 3rem 0;
+    background-color: var(--plum);
     margin: 0 auto;
-  padding: 3rem 0;
+    color: var(--white);
+    text-align: center;
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--magenta) 0%, var(--aqua) 100%) 1;
+    width: 400px;
+}
+
+#contact p {
+    font-family: var(--sans);
 }
 
 #contact p:last-child {
     margin-top: 3rem;
 }
 
+#contact button {
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    color: var(--white);
+    background-color: var(--hotmag);
+    margin-bottom: 1rem;
+}
 
-/*Navbar*/
-nav{
+/* Navbar */
+nav {
     font-family: var(--mono);
     font-size: 80%;
     padding: 1rem;
-
 }
 
-nav h1 a{
+nav h1 a {
     font-family: var(--sans);
 }
 
@@ -106,22 +120,21 @@ nav ul {
     gap: 2rem;
 }
 
-nav li:first-child{
-    flex-basis:100%;
+nav li:first-child {
+    flex-basis: 100%;
     text-align: center;
 }
 
-nav ul li span img{
-    width: 20px
-    
+nav ul li span img {
+    width: 20px;
 }
 
-nav a{
+nav a {
     color: var(--white);
     text-decoration: none;
     display: block;
 }
 
-nav a:hover{
+nav a:hover {
     color: var(--magenta);
 }
