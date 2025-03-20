@@ -48,7 +48,9 @@ a:hover {
 
 /* Intro styles */
 #intro {
-    padding-bottom: 10rem;
+    padding-bottom: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 #intro p {
@@ -71,6 +73,26 @@ a:hover {
     font-size: 2rem;
 }
 
+/*Projects section*/
+.section-project{
+    background-color: var(--dkblue);
+    padding: 4rem 1rem;
+}
+
+
+
+/*Background color divs*/
+.section-plum{
+    border-style: solid;
+    border-image: linear-gradient(to right, var(--magenta) 0%, var(--aqua) 100%) 1;
+    background-color: var(--plum);
+}
+
+.gradient{
+    height: 2px;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(255,23,228,1) 0%, rgba(134,251,251,1) 100%);
+}
+
 /* Contact section */
 #contact {
     padding: 3rem 0;
@@ -78,9 +100,9 @@ a:hover {
     margin: 0 auto;
     color: var(--white);
     text-align: center;
-    border-style: solid;
-    border-image: linear-gradient(to right, var(--magenta) 0%, var(--aqua) 100%) 1;
-    width: 400px;
+    /*border-style: solid;*/
+    /*border-image: linear-gradient(to right, var(--magenta) 0%, var(--aqua) 100%) 1;*/
+    width: auto;
 }
 
 #contact p {
@@ -178,8 +200,11 @@ nav a:hover {
 
 .button{
     background-color: var(--magenta);
+    color: white;
     padding:0.5rem;
     border-radius: 5px;
+    font-family: var(--mono);
+    text-decoration: none;
 }
 
 .button:hover{
@@ -202,31 +227,22 @@ nav a:hover {
 
 
 /*Footer content*/
-footer h2{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
+footer{
+    text-align: center;
+    padding: 4rem 0;
 }
-
 
 footer ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 2rem 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: center;
-    gap: 2rem;
+    font-size: 3rem;
+    gap: 3rem;
 }
 
-footer p{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-}
 
 .email-icone{
     width: 20px;
