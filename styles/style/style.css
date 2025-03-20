@@ -20,10 +20,12 @@ html {
     box-sizing: inherit;
 }
 
+
 /* Generic styles for the page */
 body {
     padding: 0;
-    margin: 0;
+    margin-left: 50px;
+    margin-right: 50px;
     font-family: var(--sans);
     background-color: var(--black);
     color: var(--white);
@@ -125,8 +127,18 @@ nav li:first-child {
     text-align: center;
 }
 
+nav[class*="h1-logo"]{
+    font-size: 150%;
+    color: var(--aqua);
+}
+
+nav h1[class*="h1-logo"]{
+    font-size: 100%;
+    color: var(--aqua);
+}
+
 nav ul li span img {
-    width: 20px;
+    width: 15px;
 }
 
 nav a {
@@ -137,4 +149,87 @@ nav a {
 
 nav a:hover {
     color: var(--magenta);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    
+    gap: 8px; /* Espaçamento entre o ícone e o nome */
+}
+
+.react-logo {
+    width: 20px;
+    height: auto;
+    filter: invert(55%) sepia(100%) saturate(500%) hue-rotate(180deg);
+}
+
+.github-logo{
+    width: 20px;
+    height: auto;
+    filter: invert(55%) sepia(100%) saturate(500%) hue-rotate(180deg);
+}
+
+.linkedin-logo{
+    width: 20px;
+    height: auto;
+    filter: invert(55%) sepia(100%) saturate(500%) hue-rotate(180deg);
+}
+
+.button{
+    background-color: var(--magenta);
+    padding:0.5rem;
+    border-radius: 5px;
+}
+
+.button:hover{
+    color: var(--white);
+    background-color: var(--hotmag);
+}
+
+@media (min-width: 850px){
+    nav{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    nav li:first-child{
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+
+/*Footer content*/
+footer h2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer p{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-icone{
+    width: 20px;
+    height: auto;
+    filter: invert(55%) sepia(100%) saturate(500%) hue-rotate(180deg);
 }

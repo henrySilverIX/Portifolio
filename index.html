@@ -20,15 +20,16 @@
     <link rel="stylesheet" href="./styles/style/style.css">
 </head>
 <body>
+
+    <!--Navbar section-->
     <nav>
         <ul>
             <li>
                 <h1>
-                    <span>
-                        <img src="./styles/img/react-brands-solid.svg" alt="Logo do React">
-                        <a href="index.html">Henrique</a>
-                    </span>
-                    
+                    <div class="logo-container">
+                        <img src="./styles/img/react-brands-solid.svg" alt="Logo do React" class="react-logo">
+                        <a href="index.html" class="h1-logo">Henrique</a>
+                    </div>
                 </h1>
             </li>
             <li>
@@ -42,24 +43,24 @@
             </li>
             <li>
                 <a href="https://www.linkedin.com/in/henrique-silva-9737bb237/" target="_blank">
-                    <span class="fa-brands fa-linkedin"></span>
                     <span>
-                        <img src="./styles/img/linkedin-brands.svg" alt="Logo do Linkedin">LinkedIn
+                        <img src="./styles/img/linkedin-brands.svg" alt="Logo do Linkedin" class="linkedin-logo">
                     </span>
                 </a>
             </li>
             <li>
-                <span>
-                    <img src="./styles/img/square-github-brands.svg" alt="Logo do github">
-                    <a href="https://github.com/henrySilverIX">Github</a>
-                </span>
-                
+                <a href="https://github.com/henrySilverIX" target="_blank">
+                    <span>
+                        <img src="./styles/img/square-github-brands.svg" alt="Logo do github" class = "github-logo">
+                    </span>
+                </a>
             </li>
             <li>
-                <a href="https://www.dropbox.com/s/3z2hm5gu3v2lrfy/JenKramerCV.pdf?dl=0">Resume</a>
+                <a href="https://www.dropbox.com/s/3z2hm5gu3v2lrfy/JenKramerCV.pdf?dl=0" class="button">Resume</a>
             </li>
         </ul>
     </nav>
+
 
     <section id="intro">
         <p class="intro__name">Hi, my name is <span>Henrique Tadeu da Silva.</span></p>
@@ -80,5 +81,34 @@
         <button>Email me</button>
     </section>
 
+    <footer class="footer-content">
+
+        <h2>Henrique &middot; Student</h2>
+
+        <ul>
+            <a href="https://www.linkedin.com/in/henrique-silva-9737bb237/">
+                <li>
+                    <img src="./styles/img/linkedin-brands.svg" alt="Logo do Linkedin" class="linkedin-logo">
+                </li>
+            </a>
+            
+            <a href="https://github.com/henrySilverIX">
+                <li>
+                    <img src="./styles/img/square-github-brands.svg" alt="Logo do github" class = "github-logo">
+                </li>
+            </a>
+            
+            <a href="mailto:henrysilver.gold@gmail.com">
+                <li>
+                    <img src="./styles/img/envelope-solid.svg" alt="Ícone de email" class = "email-icone">
+                    
+                </li>
+            </a>
+        </ul>
+
+        <p>
+            &copy; 2025 Henrique. All rights reserved.
+        </p>
+    </footer>
 </body>
 </html>
